@@ -66,6 +66,14 @@
             text-decoration: none;
         }
 
+        .dropdown-menu {
+            background-color: #5E4485;
+        }
+        .nav .dropdown .dropdown-menu .dropdown-item:hover{ /*dropdownmenu hatterszine focusban*/
+            background: #000000;
+            opacity: 0.7;
+        }
+
         @media (max-width:900px) {
             .fa {
                 font-size: 20px;
@@ -98,13 +106,39 @@
                 <a class="navbar-brand" href="#"><img src="Images/w3newbie.png"></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
-                <!--navbar-right jelzi, hogy merre legyen eltolva-->
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                <!--navbar-left jelzi, hogy merre legyen eltolva-->
+                <ul class="nav navbar-nav navbar-left">
+                    <!--
+                        <li><a href="#">Noi</a></li>
+                        <li><a href="#">Ferfi</a></li>
+                        <li><a href="#">Gyerek</a></li>
+                    -->
+                    <!-- Dropdown menu-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Noi</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">1.Sor</a></li>
+                            <li class="divider"></li>
+                            <li><a class="dropdown-item" href="#">2.Sor</a></li>
+                            <li><a class="dropdown-item" href="#">3.Sor</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ferfi</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">1.Sor</a></li>
+                            <li><a class="dropdown-item" href="#">2.Sor</a></li>
+                            <li><a class="dropdown-item" href="#">3.Sor</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gyerek</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">1.Sor</a></li>
+                            <li><a class="dropdown-item" href="#">2.Sor</a></li>
+                            <li><a class="dropdown-item" href="#">3.Sor</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
